@@ -52,6 +52,8 @@ async function getUserData(userName) {
 
     const repositoriesResponse = await getRepositories(userName)
 
+    
+
     user.setInfo(userResponse)
     user.setRepositories(repositoriesResponse)
 

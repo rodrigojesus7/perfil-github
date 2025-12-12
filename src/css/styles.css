@@ -132,21 +132,48 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
-.container .profile-data .repositories ul li a{
-  padding: 20px;
+.container .profile-data .repositories ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
   border: 1px solid grey;  
   margin: 20px;
-  display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
 }
 
-.container .profile-data .repositories ul li a:hover{
-  background-color:hotpink;
-  color: #fff
+.container .profile-data .repositories ul li:hover{
+ background-color: hotpink;
+  transition: 0.3s ease-in-out;
 }
+
+.container .profile-data .repositories ul li a{
+  padding: 15px;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.repo-itens{
+  display: flex;
+  text-align: center;
+  gap: 8px;
+}
+
+.repo-itens p{
+  border-radius: 8px;
+  background-color: #695acc;
+  color: #ffffff;
+  padding: 5px 11px;
+}
+
+
 
 .container .profile-data.hide{
   display: none;
@@ -192,4 +219,5 @@ main {
     width: 100%;
     padding: 0;
   }
+  
 }
