@@ -6,8 +6,7 @@ const user = {
     followers: '',
     following: '',
     repositories: [],
-
-    
+    events: [],   // <-- ADICIONADO
 
     setInfo(gitHubUser) {
         this.avatarUrl = gitHubUser.avatar_url
@@ -16,14 +15,15 @@ const user = {
         this.bio = gitHubUser.bio
         this.followers = gitHubUser.followers
         this.following = gitHubUser.following
-        
     },
+
     setRepositories(repositories) {
         this.repositories = repositories
+    },
 
+    setEvents(events) {     // <-- ADICIONADO
+        this.events = events
     }
-
 }
-
 
 export { user }
